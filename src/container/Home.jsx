@@ -7,7 +7,7 @@ import { Sidebar, UserProfile } from '../components';
 import Pins from './Pins';
 import { userQuery } from '../utils/data';
 import { client } from '../client';
-import logo from '../assets/logos.png';
+import logo from '../assets/favicon.png';
 
 const Home = () => {
   const [toggleSidebar, setToggleSidebar] = useState(false);
@@ -39,7 +39,7 @@ const Home = () => {
         <div className=" p-2 w-full flex flex-row justify-between items-center shadow-md">
           <HiMenu size={40} className="cursor-pointer" onClick={() => setToggleSidebar(true)} />
           <Link to="/">
-            <img src={logo} alt="logo" className="w-28" />
+            <img src={logo} alt="logo" className="w-12" />
           </Link>
           <Link to={`user-profile/${user?._id}`}>
             <img src={user?.image} alt="profile" className="w-12 rounded-full" />
