@@ -21,12 +21,15 @@ const Navbar = ({ searchTerm, setSearchTerm, user }) => {
         />
       </div>
       <div className=" flex gap-3 items-center">
-        <Link to={`/user-profile/:${user?._id}`} className=" hidden md:inline-block w-14 h-14">
-          <img src={user.image} alt="user-image" className=" object-cover  rounded-full border-2 border-black" />
+        <Link
+          to={`/user-profile/:${user?._id}`}
+          className=" hidden md:inline-block w-14 h-14 rounded-full border-8 border-transparent hover:border-gray-200"
+        >
+          <img src={user.image} alt="user-image" className=" object-cover rounded-full" />
         </Link>
         <Link
           to={`/create-pin`}
-          className=" bg-gradient-to-tr to-[#d080f7] from-[#9dd6fc] text-white w-12 h-12 md:w-14 md:h-14 rounded-lg flex justify-center items-center"
+          className=" bg-gradient-to-tr to-[#d080f7] from-[#9dd6fc] text-white w-12 h-12 rounded-lg flex justify-center items-center hover:opacity-75"
         >
           <IoMdAdd size={25} />
         </Link>
