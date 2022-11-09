@@ -172,7 +172,7 @@ const CreatePin = ({ user }) => {
             <button
               type="button"
               onClick={savePin}
-              className="bg-gradient-to-l to-[#d080f7] from-[#9dd6fc] text-white font-bold p-2 rounded-full w-28 outline-none"
+              className="bg-indigo-400 text-white font-bold p-2 rounded-full w-28 outline-none"
             >
               Save Pin
             </button>

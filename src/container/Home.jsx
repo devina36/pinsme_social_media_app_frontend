@@ -18,13 +18,15 @@ const Home = () => {
 
   const dataUser = fetchUser();
 
+  const datas = dataUser?.googleId;
+
   useEffect(() => {
-    const query = userQuery(dataUser?.googleId);
+    const query = userQuery(datas);
 
     client.fetch(query).then((data) => {
       setUser(data[0]);
     });
-  }, []);
+  }, [datas]);
 
   useEffect(() => {
     scrollRef.current.scrollTo(0, 0);
