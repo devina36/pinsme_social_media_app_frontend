@@ -1,6 +1,6 @@
 # PinsMe Social Media
 
-[Create React App](./public/PinsMe-Sosmed.png)
+![preview](./public/PinsMe-Sosmed.png)
 
 ## Introduction
 
